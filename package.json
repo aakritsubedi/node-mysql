@@ -1,0 +1,28 @@
+{
+  "name": "node-mysql",
+  "version": "1.0.0",
+  "description": "Using MySQL db with nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aakritsubedi/node-mysql.git"
+  },
+  "author": "AAkrit Subedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aakritsubedi/node-mysql/issues"
+  },
+  "homepage": "https://github.com/aakritsubedi/node-mysql#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
