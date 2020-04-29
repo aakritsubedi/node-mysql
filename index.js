@@ -22,6 +22,16 @@ db.connect((err) => {
 
 const app = express();
 
+//Create database
+app.get("/create/db/:dbName", (req, res) => {
+  let sql = "CREATE DATABASE " + req.params.dbName;
+
+  db.query(sql, (err, result) => {
+    if (err) throw err;
+    console.log(result);
+    res.send("Database created...");
+  });
+});
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log("Server started on PORT", PORT);
