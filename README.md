@@ -187,18 +187,18 @@
     - your App running at:  
       Local: http://localhost:3000/
  - list of avaiable routes
-    - **Create database:**  `/create/db/:dbName`      
+    - **Create database:**  `/create/db/:dbName`        
       Eg: 'http://localhost:3000/create/db/node_mysql'
-    - **Create table:**  `/create/table/:tblName`  
+    - **Create table:**  `/create/table/:tblName`    
       Eg: 'http://localhost:3000/create/table/users'
-    - **INSERT data:**  `/insert/table/:LastName/:FirstName/:Address/:City`  
+    - **INSERT data:**  `/insert/table/:LastName/:FirstName/:Address/:City`    
       Eg: 'http://localhost:3000/insert/table/Subedi/Aakrit/Basundhara/Kathmandu'
     - **SELECT data:** 
-        - **ALL Records:** `/select/:tblName`
+        - **ALL Records:** `/select/:tblName`  
           Eg: 'http://localhost:3000/select/users'
-        - **Particular Record:** `/select/:tblName/:id`
+        - **Particular Record:** `/select/:tblName/:id`  
           Eg: 'http://localhost:3000/select/users/1'
-    - **Update data:**  `/update/data/:id/:LastName/:FirstName/:Address/:City`
+    - **Update data:**  `/update/data/:id/:LastName/:FirstName/:Address/:City`  
       Eg: 'http://localhost:3000/update/data/1/Subedi/Aakrit/Bahundangi/Jhapa'
-    - **Delete data:**   `/delete/users/:id`
+    - **Delete data:**   `/delete/users/:id`  
       Eg: 'http://localhost:3000/delete/users/1'
