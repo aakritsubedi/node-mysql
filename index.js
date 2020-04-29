@@ -32,6 +32,21 @@ app.get("/create/db/:dbName", (req, res) => {
     res.send("Database created...");
   });
 });
+
+//Create table in database
+app.get("/create/table/:tblName", (req, res) => {
+  let sql =
+    "CREATE TABLE "+ req.params.tblName +"(id int AUTO_INCREMENT PRIMARY KEY,LastName varchar(255),FirstName varchar(255),Address varchar(255),City varchar(255))";
+  console.log(sql);
+  
+  db.query(sql, (err, result) => {
+    if (err) throw err;
+    console.log(result);
+    res.send("Table created...");
+  });
+});
+
+
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log("Server started on PORT", PORT);
